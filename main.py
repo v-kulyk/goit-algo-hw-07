@@ -76,10 +76,10 @@ if __name__ == "__main__":
         tree = insert(tree, random.randint(10, 1000))
 
     print("Завдання 1:", end='\n')
-    print(f"Min value: {min_value_node(tree).val}", end='\n\n')
+    print(f"Min value: {min_value_node(tree)}", end='\n\n')
 
     print("Завдання 2:", end='\n')
-    print(f"Max value: {max_value_node(tree).val}", end='\n\n')
+    print(f"Max value: {max_value_node(tree)}", end='\n\n')
 
     print("Завдання 3:", end='\n')
     print(f"Sum values (iterable): {sum_values_iterable(tree)}", end='\n')
