@@ -27,7 +27,7 @@ def insert(root, key):
     return root
 
 
-def min_value_node(node):
+def min_value(node):
     #В бінарному дереві пошуку найменший елемент завжди найлівіший
     current = node
     while current.left:
@@ -35,7 +35,7 @@ def min_value_node(node):
     return current.val
 
 
-def max_value_node(node: Node):
+def max_value(node: Node):
     #В бінарному дереві пошуку найбільший елемент завжди нвйправіший
     current = node
     while current.right:
@@ -76,10 +76,10 @@ if __name__ == "__main__":
         tree = insert(tree, random.randint(10, 1000))
 
     print("Завдання 1:", end='\n')
-    print(f"Min value: {min_value_node(tree)}", end='\n\n')
+    print(f"Min value: {min_value(tree)}", end='\n\n')
 
     print("Завдання 2:", end='\n')
-    print(f"Max value: {max_value_node(tree)}", end='\n\n')
+    print(f"Max value: {max_value(tree)}", end='\n\n')
 
     print("Завдання 3:", end='\n')
     print(f"Sum values (iterable): {sum_values_iterable(tree)}", end='\n')
