@@ -32,7 +32,7 @@ def min_value_node(node):
     current = node
     while current.left:
         current = current.left
-    return current
+    return current.val
 
 
 def max_value_node(node: Node):
@@ -40,7 +40,7 @@ def max_value_node(node: Node):
     current = node
     while current.right:
         current = current.right
-    return current
+    return current.val
 
 
 def sum_values_recursive(root: Node) -> int:
